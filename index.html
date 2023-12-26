@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script src="/App.js"></script>
     <title>Jabir Mussa</title>
 </head>
 <body>
     <header class="fixed headeractive">
             <div class="logo">
-                <a href="#"><img src="images/jabirLogo.svg" alt="logo"></a>
+                <a href="index.html"><img src="images/jabirLogo.svg" alt="logo"></a>
             </div>
             <input type="checkbox" id="nav_check" hidden>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         <label for="nav_check" class="hamburger">
@@ -39,13 +40,12 @@
         
         <div class="wrapper with-padding">
             <div class="image cover-image">
-                <img src="images/3.jpg" alt="">
+                <img src="images/eu.png" alt="">
             </div>
-            <div class="text">
+            <div class="text" id="about">
                     <div class="text-content">
-                        <div class="circle"></div>
-                        <h1>Quem sou eu<span>?</span></h1>
-                        <h1 class="">Hello</h1>
+                        <div class="border"></div>
+                        <h1>About</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -53,7 +53,7 @@
             </div>
             </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
         <div class="wrapper">
             <div class="title1 border">
                 <h1>Works</h1>
@@ -64,8 +64,6 @@
                         <li><a href="#">Tudo</a></li>
                         <li><a href="#">Graphic</a></li>
                         <li><a href="#">Web design</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">Artes</a></li>
                     </ul>
                 </nav>
             </div>
@@ -164,6 +162,48 @@
             <a href="#" onclick="showMoreImages()">Ver mais...</a>
         </div>
     </div>
+    <section class="contact">
+        <div class="wrapper">
+            <div class="text" id="contact">
+                <div class="text-content">
+                    <h1>Contact</h1>
+                    <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</p>
+                    <div class="social">
+                        <ul class="wrapper">
+                            <li class="icon facebook">
+                              <span class="tooltip">Facebook</span>
+                              <span><i class="fab fa-facebook-f"></i></span>
+                            </li>
+                            <li class="icon twitter">
+                              <span class="tooltip">Twitter</span>
+                              <span><i class="fab fa-twitter"></i></span>
+                            </li>
+                            <li class="icon instagram">
+                              <span class="tooltip">Instagram</span>
+                              <span><i class="fab fa-instagram"></i></span>
+                            </li>
+                            <li class="icon github">
+                              <span class="tooltip">Github</span>
+                              <span><i class="fab fa-github"></i></span>
+                            </li>
+                            <li class="icon youtube">
+                              <span class="tooltip">Youtube</span>
+                              <span><i class="fab fa-youtube"></i></span>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="inputs">
+                <form action="">
+                    <h2>Fale comigo</h2>
+                    <input type="email" name="email" placeholder="email">
+                    <input type="text" name="" placeholder="assunto">
+                    <button class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
    
     
 </body>
