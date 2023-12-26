@@ -348,6 +348,7 @@ h1 {
     font-size: 20px;
     font-family: "Space Mono", monospace;
     margin-bottom: 40px;
+    line-height: 40px;
 }
 span {
     color: var(--bs-yellow);
