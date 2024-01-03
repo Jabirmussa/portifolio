@@ -832,25 +832,29 @@ button {
     transform: translateX(-5%) skew(-10deg);
   }
   
-  .animation{
-    filter: blur(3px);
-    transition: 2s;
-    opacity: 0;
-  }
-  .from-left{
-    transform: translateX(-120%);
-  }
-
-  .from-right{
-    transform: translateX(100%);
-  }
-
-  .from-top{
-    transform: translateY(-150%);
-  }
-
-  .animation.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
+  
+  @media only screen and (min-width:960px) {
+      .animation{
+        filter: blur(3px);
+        transition: 2s;
+        opacity: 0;
+      }
+      .from-left{
+        transform: translateX(-120%);
+      }
+    
+      .from-right{
+        transform: translateX(100%);
+      }
+    
+      .from-top{
+        transform: translateY(-150%);
+      }
+    
+      .animation.show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0);
+      }
+    
   }
