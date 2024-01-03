@@ -64,6 +64,7 @@
     width: 90%;
     max-width: 1360px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 header {
@@ -841,20 +842,24 @@ button {
       }
       .from-left{
         transform: translateX(-120%);
+        overflow: none;
       }
     
       .from-right{
         transform: translateX(100%);
+        overflow: none;
       }
     
       .from-top{
         transform: translateY(-150%);
+        overflow: none;
       }
     
       .animation.show{
         opacity: 1;
         filter: blur(0);
         transform: translate(0);
+        overflow: none;
       }
     
   }
