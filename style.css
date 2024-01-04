@@ -89,6 +89,8 @@ header {
 }
 header .logo img {
     width: 30px;
+    position: relative;
+    z-index: 2000;
 }
 
 header nav ul {
