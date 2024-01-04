@@ -166,7 +166,8 @@ nav ul li a:active {
     header #nav_check:checked ~ nav {
         left: 0;
         top: 0;
-        background-color: var(--bs-dark);
+        background-color: var(--bs-yellow);
+        background-image: url(images/back.svg);
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -181,7 +182,7 @@ nav ul li a:active {
     }
     header nav ul li a {
         margin: 5px;
-        color: var(--bs-yellow);
+        color: var(--bs-black);
         font-size: 22px;
     }
 }
@@ -207,7 +208,6 @@ nav ul li a:active {
     justify-self: center;
     width: 30%;
 }
-
 
 @media only screen and (min-width:960px) {
     .hero .wrapper .img{
@@ -343,12 +343,23 @@ h1 {
 .text {
    display: flex;
    align-items: center;
-   background-image: url(images/pattern.svg);
    background-size: cover;
 }
 
+.contact .text{
+  display: none;
+  align-items: center;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 960px) {
+  .contact .text{
+    display: flex;
+    align-items: center;
+    background-size: cover;
+  }
     .text{
+        display: flex;
         margin-left: 50px;
     }
 }
@@ -358,6 +369,7 @@ h1 {
     font-size: 50px;
     z-index: 1000;
     font-family: "Space Mono", monospace;
+    margin-bottom: 20px;
 }
 
 .text p {
@@ -380,17 +392,6 @@ span {
     margin-left: -180px;
     margin-top: -118px;
 }
-
-/* 
-.text .content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-} */
-
-/* .text .text-content .main-content {
-    width: 100%;
-} */
 
 .slider{
     margin: auto;
@@ -670,96 +671,7 @@ form .btn {
     color: #fff;
     cursor: pointer;
 }
-
-.social {
-    display: grid;
-    place-items: center;
-}
-
-.social .wrapper {
-    display: inline-flex;
-    list-style: none;
-  }
   
-  .social .wrapper .icon {
-    position: relative;
-    background: #ffffff;
-    border-radius: 50%;
-    padding: 15px;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .social .wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: #ffffff;
-    color: #ffffff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .social .wrapper .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #ffffff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .facebook {
-    --color: #1877f2;
-  }
-  .twitter {
-    --color: #1da1f2;
-  }
-  .instagram {
-    --color: #e4405f;
-  }
-  .github {
-    --color: #333333;
-  }
-  .youtube {
-    --color: #cd201f;
-  }
-  
-  .icon:hover,
-  .icon:hover .tooltip,
-  .icon:hover .tooltip::before {
-    background: var(--color);
-    color: white;
-  }
-
 footer{
     height: 40px;
 }
@@ -767,12 +679,22 @@ footer{
 footer .wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
 footer p{
     font-family: mose;
     font-size: 12px;
+}
+
+footer .social {
+  margin: 10px;
+}
+
+footer .social a > img{
+  width: 30px;
+  margin: 3px;
 }
 
 button {
@@ -789,12 +711,14 @@ button {
   button a {
     position: relative;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 700;
     font-family: mose;
     color: #ece8e1;
     text-transform: uppercase;
     z-index: 2;
+  }
+
+  .contact .wrapper .text .text-content button{
+    background-color: var(--bs-green);
   }
   
   button::before,
@@ -851,7 +775,7 @@ button {
       }
     
       .from-top{
-        transform: translateY(-150%);
+        transform: translateY(-100%);
         overflow: none;
       }
     
@@ -862,4 +786,15 @@ button {
         overflow: none;
       }
     
+  }
+  
+  .ver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .ver button{
+    color: #0dcaf0;
   }
