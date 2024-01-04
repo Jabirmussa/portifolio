@@ -196,6 +196,8 @@ nav ul li a:active {
     margin-top: 70px;
     background: #000;
     background-image: url(images/back.svg);
+    background-size: cover;
+    height: 40px;
 }
 
 .hero .wrapper {
