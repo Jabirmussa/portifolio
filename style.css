@@ -80,9 +80,7 @@ header {
     justify-content: space-between;
     padding: 0 50px;
     transition: all 0.3s ease-in-out;
-    o
 }
-
 
 .headeractive{
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -241,10 +239,16 @@ nav ul li a:active {
     width: 87%;
 }
 
-.hero .title h2 {
-    position: relative;
-    z-index: 200;
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
+h3 > img {
+    position: relative;
+    top: 11px;
+}
+
 
 h1 {
     font-size: 15px;
@@ -287,6 +291,7 @@ h1 {
     top: -10px;
     background: var(--bs-yellow);
     background-image: url(images/back.svg);
+    background-size: cover;
 }
 .image-text  {
      background-color: linear-gradient(315deg, #ffffff, #d7e1ec);
@@ -362,10 +367,6 @@ h1 {
     align-items: center;
     background-size: cover;
   }
-    .text{
-        display: flex;
-        margin-left: 50px;
-    }
 }
 
 .text h1 {
